@@ -29,4 +29,8 @@ public abstract class Enemy implements Damageable {
     public void takeDamage(int damage){
         this.health -= damage;
     }
+
+    public void attack(Damageable player){
+        player.takeDamage(this.damage);
+    }
 }

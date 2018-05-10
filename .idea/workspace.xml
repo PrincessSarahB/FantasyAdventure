@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4f751f1-daea-4c5d-a35d-24670a99931b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/magicians/Magician.java" afterPath="$PROJECT_DIR$/src/main/java/players/magicians/Magician.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WarlockTest.java" afterPath="$PROJECT_DIR$/src/test/java/WarlockTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" afterPath="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EnemyTest.java" afterPath="$PROJECT_DIR$/src/test/java/EnemyTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WarlockTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WarlockTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/WarlockTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
@@ -87,26 +87,29 @@
       <file leaf-file-name="Enemy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/enemies/Enemy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="423">
+              <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
               <folding>
                 <element signature="e#353#354#0" expanded="true" />
                 <element signature="e#380#381#0" expanded="true" />
                 <element signature="e#410#411#0" expanded="true" />
                 <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#469#470#0" expanded="true" />
                 <element signature="e#498#499#0" expanded="true" />
                 <element signature="e#539#540#0" expanded="true" />
                 <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#624#625#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnemyTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EnemyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/EnemyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="-6">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -155,10 +158,10 @@
                 <element signature="e#837#838#0" expanded="true" />
                 <element signature="e#868#869#0" expanded="true" />
                 <element signature="e#920#921#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1095#1096#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -518,10 +521,10 @@
         <option value="$PROJECT_DIR$/src/main/java/players/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/enemies/Orc.java" />
         <option value="$PROJECT_DIR$/src/main/java/enemies/Troll.java" />
-        <option value="$PROJECT_DIR$/src/test/java/EnemyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" />
         <option value="$PROJECT_DIR$/src/test/java/WarlockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/players/magicians/Magician.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EnemyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/enemies/Enemy.java" />
       </list>
     </option>
   </component>
@@ -728,7 +731,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WarlockTest.canCastSpell">
+  <component name="RunManager" selected="JUnit.EnemyTest.canAttack">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -759,6 +762,26 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="EnemyTest.canAttack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FantasyAdventure_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EnemyTest" />
+      <option name="METHOD_NAME" value="canAttack" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -818,26 +841,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WarlockTest" />
       <option name="METHOD_NAME" value="canCastSpell" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="WarlockTest.canChangeMythicalCreature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FantasyAdventure_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="WarlockTest" />
-      <option name="METHOD_NAME" value="canChangeMythicalCreature" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -911,19 +914,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.WarlockTest.canChangeMythicalCreature" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.WarlockTest.canBeDefendedByMythicalCreature" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventure_test" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EnemyTest.canTakeDamage" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WarlockTest.canBeDefendedByMythicalCreature" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventure_test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EnemyTest.canTakeDamage" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EnemyTest.canAttack" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EnemyTest.canTakeDamage" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventure_test" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WarlockTest.canBeDefendedByMythicalCreature" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.WarlockTest.canChangeMythicalCreature" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EnemyTest.canAttack" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EnemyTest.canTakeDamage" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.All in FantasyAdventure_test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WarlockTest.canBeDefendedByMythicalCreature" />
       </list>
     </recent_temporary>
   </component>
@@ -950,9 +953,6 @@
     <history-entry file="ClericTest_canBeHealed - 2018.05.10 at 12h 03m 11s.xml">
       <configuration name="ClericTest.canBeHealed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ClericTest_canTakeDamage - 2018.05.10 at 11h 56m 54s.xml">
-      <configuration name="ClericTest.canTakeDamage" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ClericTest_clericCanHeal - 2018.05.10 at 12h 04m 25s.xml">
       <configuration name="ClericTest.clericCanHeal" configurationId="JUnit" />
     </history-entry>
@@ -964,6 +964,9 @@
     </history-entry>
     <history-entry file="WarlockTest_canBeDefendedByMythicalCreature - 2018.05.10 at 13h 25m 41s.xml">
       <configuration name="WarlockTest.canBeDefendedByMythicalCreature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="WarlockTest_canCastSpell - 2018.05.10 at 13h 41m 15s.xml">
+      <configuration name="WarlockTest.canCastSpell" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WarlockTest_canChangeMythicalCreature - 2018.05.10 at 13h 22m 50s.xml">
       <configuration name="WarlockTest.canChangeMythicalCreature" configurationId="JUnit" />
@@ -1403,30 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/enemies/Enemy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/EnemyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/players/magicians/Magician.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -1443,10 +1422,10 @@
             <element signature="e#837#838#0" expanded="true" />
             <element signature="e#868#869#0" expanded="true" />
             <element signature="e#920#921#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1095#1096#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1474,6 +1453,33 @@
             <element signature="e#1469#1470#0" expanded="true" />
             <element signature="e#1550#1551#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/enemies/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="33" column="39" lean-forward="true" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding>
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#380#381#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/EnemyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
