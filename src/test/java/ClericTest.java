@@ -38,6 +38,11 @@ public class ClericTest {
     }
 
     @Test
+    public void hasEmptyBagOfTreasure() {
+        assertEquals(0, cleric.getTreasureCount());
+    }
+
+    @Test
     public void canChangeHealingTool(){
         HealingTool healingTool2 = new HealingTool(HealingToolType.HERB);
         cleric.setHealingTool(healingTool2);
@@ -58,10 +63,12 @@ public class ClericTest {
         assertEquals(9, cleric.getCurrentHealth());
     }
 
-        @Test
+    @Test
     public void clericCanHeal() {
         cleric.takeDamage(5);
         cleric.heal(cleric);
         assertEquals(9, cleric.getCurrentHealth());
     }
+
+
 }

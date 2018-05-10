@@ -7,5 +7,8 @@ public class Knight extends Hero {
         super(name, maxHealth, weapon);
     }
 
+    public void takeDamage(int damage){
+        setCurrentHealth(Math.round(getCurrentHealth() - (damage/2)));
+    }
 
 }

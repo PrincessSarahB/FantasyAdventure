@@ -31,6 +31,10 @@ public abstract class Player implements Damageable, Healable {
         return currentHealth;
     }
 
+    public void setCurrentHealth(int currentHealth) {
+        this.currentHealth = currentHealth;
+    }
+
     public int getTreasureCount() {
         return this.treasure.size();
     }

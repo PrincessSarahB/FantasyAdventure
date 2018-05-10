@@ -37,4 +37,10 @@ public class KnightTest {
         knight.attack(enemy);
         assertEquals(15, enemy.getHealth());
     }
+
+    @Test
+    public void canTakeHalfDamage(){
+        knight.takeDamage(25);
+        assertEquals(8, knight.getCurrentHealth());
+    }
 }
