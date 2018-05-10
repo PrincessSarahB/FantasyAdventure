@@ -1,3 +1,4 @@
+import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;
 import players.heroes.Knight;
@@ -28,5 +29,12 @@ public class KnightTest {
         Axe axe = new Axe(6);
         knight.setWeapon(axe);
         assertEquals(axe, knight.getWeapon());
+    }
+
+    @Test
+    public void canAttackEnemy() {
+        Orc enemy = new Orc("Bill", 20);
+        knight.attack(enemy);
+        assertEquals(15, enemy.getHealth());
     }
 }

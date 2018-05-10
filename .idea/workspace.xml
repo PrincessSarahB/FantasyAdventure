@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f4f751f1-daea-4c5d-a35d-24670a99931b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/players/Cleric.java" afterPath="$PROJECT_DIR$/src/main/java/players/Cleric.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/KnightTest.java" afterPath="$PROJECT_DIR$/src/test/java/KnightTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -96,12 +96,12 @@
       <file leaf-file-name="KnightTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/KnightTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="449">
+              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#444#445#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -697,7 +697,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KnightTest.canChangeWeapon">
+  <component name="RunManager" selected="JUnit.KnightTest.canAttackEnemy">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -739,14 +739,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="EnemyTest.canTakeDamage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KnightTest.canAttackEnemy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FantasyAdventure_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EnemyTest" />
-      <option name="METHOD_NAME" value="canTakeDamage" />
+      <option name="MAIN_CLASS_NAME" value="KnightTest" />
+      <option name="METHOD_NAME" value="canAttackEnemy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -880,19 +880,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EnemyTest.canTakeDamage" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EnemyTest.canAttack" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.KnightTest.hasWeapon" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.KnightTest.canChangeWeapon" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EnemyTest.canAttack" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.KnightTest.hasWeapon" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.KnightTest.canChangeWeapon" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.KnightTest.canAttackEnemy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.KnightTest.canChangeWeapon" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.KnightTest.hasWeapon" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EnemyTest.canAttack" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EnemyTest.canTakeDamage" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.KnightTest.canAttackEnemy" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.KnightTest.canChangeWeapon" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.KnightTest.hasWeapon" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EnemyTest.canAttack" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.WarlockTest.canCastSpell" />
       </list>
     </recent_temporary>
   </component>
@@ -922,6 +922,9 @@
     <history-entry file="EnemyTest_canTakeDamage - 2018.05.10 at 13h 35m 30s.xml">
       <configuration name="EnemyTest.canTakeDamage" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="KnightTest_canChangeWeapon - 2018.05.10 at 13h 59m 22s.xml">
+      <configuration name="KnightTest.canChangeWeapon" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="KnightTest_hasWeapon - 2018.05.10 at 13h 57m 33s.xml">
       <configuration name="KnightTest.hasWeapon" configurationId="JUnit" />
     </history-entry>
@@ -940,9 +943,6 @@
     <history-entry file="WizardTest - 2018.05.10 at 12h 14m 33s.xml">
       <configuration name="WizardTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WizardTest_canChangeSpell - 2018.05.10 at 12h 14m 27s.xml">
-      <configuration name="WizardTest.canChangeSpell" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -950,7 +950,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -958,7 +958,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49427754" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1517,12 +1517,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/KnightTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="449">
+          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
           </folding>
         </state>
       </provider>
