@@ -1,6 +1,7 @@
 package players;
 
 import healingTools.HealingTool;
+import interfaces.Healable;
 
 public class Cleric extends Player {
 
@@ -19,7 +20,7 @@ public class Cleric extends Player {
         this.healingTool = healingTool;
     }
 
-    public void heal(Player player){
+    public void heal(Healable player){
         player.beHealed(healingTool.getHealingValueFromEnum());
     }
 }
