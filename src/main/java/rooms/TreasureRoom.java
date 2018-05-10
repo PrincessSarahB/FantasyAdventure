@@ -25,4 +25,9 @@ public class TreasureRoom extends Room {
         treasures.add(new Treasure(TreasureType.getRandomTreasureType()));
     }
 
+    public void playersCollectTreasure() {
+        for (Player player : players) {
+            player.pickUpTreasure(treasures.remove(0));
+        }
+    }
 }

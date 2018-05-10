@@ -14,6 +14,7 @@ public class RoomTest {
     TreasureRoom treasureRoom;
     EnemyRoom enemyRoom;
     Cleric cleric;
+    Cleric cleric2;
     HealingTool healingTool;
 
     @Before
@@ -22,6 +23,7 @@ public class RoomTest {
         enemyRoom = new EnemyRoom("Enemy room");
         healingTool = new HealingTool(HealingToolType.HERB);
         cleric = new Cleric("Bob", 10, healingTool);
+        cleric2 = new Cleric("Bob", 10, healingTool);
     }
 
     @Test
@@ -43,5 +45,15 @@ public class RoomTest {
         treasureRoom.addPlayerToRoom(cleric);
         treasureRoom.addPlayerToRoom(cleric);
         assertEquals(4, treasureRoom.treasureCount());
+    }
+
+    @Test
+    public void playersCanCollectTreasure() {
+        treasureRoom.addPlayerToRoom(cleric);
+        treasureRoom.addPlayerToRoom(cleric2);
+        assertEquals(2, treasureRoom.treasureCount());
+        treasureRoom.playersCollectTreasure();
+        assertEquals(1, cleric.getTreasureCount());
+        assertEquals(0, treasureRoom.treasureCount());
     }
 }
