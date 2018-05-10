@@ -20,8 +20,8 @@ public class BarbarianTest {
     }
 
     @Test
-    public void canAttack() {
+    public void canAttackDoubleDamage() {
         barbarian.attack(orc);
-        assertEquals(16, orc.getHealth());
+        assertEquals(12, orc.getHealth());
     }
 }
