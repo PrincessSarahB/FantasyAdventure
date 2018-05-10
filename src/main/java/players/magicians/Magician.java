@@ -31,4 +31,8 @@ public abstract class Magician extends Player {
     public void setMythicalCreature(MythicalCreature mythicalCreature) {
         this.mythicalCreature = mythicalCreature;
     }
+
+    public String defended(){
+       return this.mythicalCreature.defend();
+    }
 }

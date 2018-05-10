@@ -46,4 +46,9 @@ public class WarlockTest {
         warlock.setMythicalCreature(mythicalCreature2);
         assertEquals(mythicalCreature2, warlock.getMythicalCreature());
     }
+
+    @Test
+    public void canBeDefendedByMythicalCreature(){
+        assertEquals("Smaug guards with huge wings!", warlock.defended());
+    }
 }
