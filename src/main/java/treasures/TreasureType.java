@@ -18,4 +18,8 @@ public enum TreasureType {
     public int getTreasureValue() {
         return treasureValue;
     }
+
+    public static TreasureType getRandomTreasureType() {
+        return values()[(int) (Math.random() * values().length)];
+    }
 }
