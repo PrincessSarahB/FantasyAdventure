@@ -1,6 +1,6 @@
 package mythicalCreatures;
 
-public class MythicalCreature {
+public abstract class MythicalCreature implements Defendable {
 
     private String name;
 

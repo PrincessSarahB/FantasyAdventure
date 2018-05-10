@@ -22,4 +22,10 @@ public class MythicalCreatureTest {
         assertEquals("Shrek", ogre.getName());
         assertEquals("Norbert", dragon.getName());
     }
+
+    @Test
+    public void canDefend() {
+        assertEquals("Shrek blocks attack!", ogre.defend());
+        assertEquals("Norbert guards with huge wings!", dragon.defend());
+    }
 }
