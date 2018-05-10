@@ -1,5 +1,6 @@
 package players.magicians;
 
+import enemies.Enemy;
 import interfaces.Damageable;
 import mythicalCreatures.MythicalCreature;
 import spells.Spell;
@@ -11,5 +12,7 @@ public class Warlock extends Magician {
     }
 
 
-
+    public void attackWithCreature(Enemy enemy) {
+        getMythicalCreature().attack(enemy);
+    }
 }

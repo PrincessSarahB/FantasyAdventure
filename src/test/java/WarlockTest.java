@@ -61,4 +61,10 @@ public class WarlockTest {
         warlock.castSpell(enemy);
         assertEquals(15, enemy.getHealth());
     }
+
+    @Test
+    public void canUseCreatureToAttack() {
+        warlock.attackWithCreature(enemy);
+        assertEquals(5, enemy.getHealth());
+    }
 }
