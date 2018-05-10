@@ -1,10 +1,12 @@
 package players;
 
+import interfaces.Damageable;
+import interfaces.Healable;
 import treasures.Treasure;
 
 import java.util.ArrayList;
 
-public abstract class Player {
+public abstract class Player implements Damageable, Healable {
     private String name;
     private int maxHealth;
     private int currentHealth;

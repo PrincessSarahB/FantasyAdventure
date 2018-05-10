@@ -27,4 +27,10 @@ public class EnemyTest {
         assertEquals(3, orc.getDamage());
         assertEquals(5, troll.getDamage());
     }
+
+    @Test
+    public void canTakeDamage(){
+        orc.takeDamage(10);
+        assertEquals(10, orc.getHealth());
+    }
 }

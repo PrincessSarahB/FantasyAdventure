@@ -51,4 +51,9 @@ public class WarlockTest {
     public void canBeDefendedByMythicalCreature(){
         assertEquals("Smaug guards with huge wings!", warlock.defended());
     }
+
+//    @Test
+//    public void canCastSpell() {
+//        assertEquals();
+//    }
 }

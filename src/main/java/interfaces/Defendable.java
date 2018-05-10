@@ -1,4 +1,4 @@
-package mythicalCreatures;
+package interfaces;
 
 public interface Defendable {
 
