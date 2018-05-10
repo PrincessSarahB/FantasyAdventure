@@ -3,6 +3,8 @@ import org.junit.Before;
 import org.junit.Test;
 import players.heroes.Barbarian;
 import players.heroes.Dwarf;
+import treasures.Treasure;
+import treasures.TreasureType;
 import weapons.Club;
 
 import static org.junit.Assert.assertEquals;
@@ -25,5 +27,12 @@ public class DwarfTest {
     public void canAttack() {
         dwarf.attack(orc);
         assertEquals(16, orc.getHealth());
+    }
+
+    @Test
+    public void canPickUpTreasure() {
+        Treasure treasure = new Treasure(TreasureType.EMERALD);
+        dwarf.pickUpTreasure(treasure);
+        assertEquals(1, dwarf.getTreasureCount());
     }
 }
