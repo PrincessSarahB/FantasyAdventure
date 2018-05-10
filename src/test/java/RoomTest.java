@@ -55,5 +55,7 @@ public class RoomTest {
         treasureRoom.playersCollectTreasure();
         assertEquals(1, cleric.getTreasureCount());
         assertEquals(0, treasureRoom.treasureCount());
+        assertEquals(true, treasureRoom.completed());
     }
+
 }

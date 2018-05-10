@@ -64,6 +64,10 @@ public abstract class Player implements Damageable, Healable {
         this.currentHealth += healValue;
     }
 
+    public boolean isDead() {
+        return currentHealth <= 0;
+    }
+
 }
 
 

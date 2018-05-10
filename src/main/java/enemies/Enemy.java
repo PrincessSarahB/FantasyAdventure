@@ -33,4 +33,8 @@ public abstract class Enemy implements Damageable {
     public void attack(Damageable player){
         player.takeDamage(this.damage);
     }
+
+    public boolean isDead() {
+        return health <= 0;
+    }
 }

@@ -30,8 +30,5 @@ public abstract class Room {
     public void addPlayerToRoom(Player player) {
         players.add(player);
     }
-//
-//    public void addPlayersToRoom(ArrayList<Player> players) {
-//        this.players = players;
-//    }
+
 }

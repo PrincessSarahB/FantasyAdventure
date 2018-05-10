@@ -30,4 +30,8 @@ public class TreasureRoom extends Room {
             player.pickUpTreasure(treasures.remove(0));
         }
     }
+
+    public boolean completed() {
+        return treasureCount() == 0 && getPlayerCount() > 0;
+    }
 }
