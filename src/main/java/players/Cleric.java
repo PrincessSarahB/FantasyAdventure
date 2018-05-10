@@ -19,7 +19,7 @@ public class Cleric extends Player {
         this.healingTool = healingTool;
     }
 
-//    public void heal(Player player){
-//        player.
-//    }
+    public void heal(Player player){
+        player.beHealed(healingTool.getHealingValueFromEnum());
+    }
 }
