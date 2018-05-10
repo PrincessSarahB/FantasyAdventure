@@ -32,4 +32,8 @@ public abstract class Player {
     public int getTreasureCount(){
         return this.treasure.size();
     }
+
+    public void takeDamage(int damage){
+        this.currentHealth -= damage;
+    }
 }

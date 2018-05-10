@@ -43,4 +43,11 @@ public class ClericTest {
         cleric.setHealingTool(healingTool2);
         assertEquals(healingTool2, cleric.getHealingTool());
     }
+
+    @Test
+    public void canTakeDamage(){
+        cleric.takeDamage(3);
+            assertEquals(7, cleric.getCurrentHealth());
+
+    }
 }
