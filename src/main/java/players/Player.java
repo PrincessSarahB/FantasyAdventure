@@ -43,9 +43,13 @@ public abstract class Player implements Damageable, Healable {
         this.treasure.add(treasure);
     }
 
-//    public int getTotalTreasureValue() {
-//
-//    }
+    public int getTotalTreasureValue() {
+        int total = 0;
+        for (Treasure item : treasure) {
+            total += item.getValueFromEnum();
+        }
+        return total;
+    }
 
     public void takeDamage(int damage) {
         this.currentHealth -= damage;

@@ -2,6 +2,8 @@ import enemies.Orc;
 import org.junit.Before;
 import org.junit.Test;
 import players.heroes.Knight;
+import treasures.Treasure;
+import treasures.TreasureType;
 import weapons.Axe;
 import weapons.Sword;
 import weapons.Weapon;
@@ -42,5 +44,14 @@ public class KnightTest {
     public void canTakeHalfDamage(){
         knight.takeDamage(25);
         assertEquals(8, knight.getCurrentHealth());
+    }
+
+    @Test
+    public void canGetTotalTreasureValue() {
+        Treasure treasure = new Treasure(TreasureType.EMERALD);
+        Treasure treasure2 = new Treasure(TreasureType.EMERALD);
+        knight.pickUpTreasure(treasure);
+        knight.pickUpTreasure(treasure2);
+        assertEquals(10, knight.getTotalTreasureValue());
     }
 }

@@ -35,4 +35,13 @@ public class DwarfTest {
         dwarf.pickUpTreasure(treasure);
         assertEquals(1, dwarf.getTreasureCount());
     }
+
+    @Test
+    public void canGetTotalTreasureValue() {
+        Treasure treasure = new Treasure(TreasureType.EMERALD);
+        Treasure treasure2 = new Treasure(TreasureType.EMERALD);
+        dwarf.pickUpTreasure(treasure);
+        dwarf.pickUpTreasure(treasure2);
+        assertEquals(10, dwarf.getTotalTreasureValue());
+    }
 }
