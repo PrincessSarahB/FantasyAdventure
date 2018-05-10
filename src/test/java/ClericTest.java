@@ -36,4 +36,11 @@ public class ClericTest {
     public void hasHealingTool(){
         assertEquals(healingTool, cleric.getHealingTool());
     }
+
+    @Test
+    public void canChangeHealingTool(){
+        HealingTool healingTool2 = new HealingTool(HealingToolType.HERB);
+        cleric.setHealingTool(healingTool2);
+        assertEquals(healingTool2, cleric.getHealingTool());
+    }
 }
