@@ -23,8 +23,13 @@ public class ClericTest {
     }
 
     @Test
-    public void hasHealth() {
-        assertEquals(10, cleric.getHealth());
+    public void hasCurrentHealth() {
+        assertEquals(10, cleric.getCurrentHealth());
+    }
+
+    @Test
+    public void hasMaxHealth() {
+        assertEquals(10, cleric.getMaxHealth());
     }
 
     @Test

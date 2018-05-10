@@ -6,12 +6,14 @@ import java.util.ArrayList;
 
 public abstract class Player {
     private String name;
-    private int health;
+    private int maxHealth;
+    private int currentHealth;
     private ArrayList<Treasure> treasure;
 
-    public Player(String name, int health) {
+    public Player(String name, int maxHealth) {
         this.name = name;
-        this.health = health;
+        this.maxHealth = maxHealth;
+        this.currentHealth = maxHealth;
         this.treasure = new ArrayList<>();
     }
 
@@ -19,8 +21,12 @@ public abstract class Player {
         return name;
     }
 
-    public int getHealth() {
-        return health;
+    public int getMaxHealth() {
+        return maxHealth;
+    }
+
+    public int getCurrentHealth() {
+        return currentHealth;
     }
 
     public int getTreasureCount(){
