@@ -50,4 +50,18 @@ public class ClericTest {
             assertEquals(7, cleric.getCurrentHealth());
 
     }
+
+    @Test
+    public void canBeHealed() {
+        cleric.takeDamage(5);
+        cleric.beHealed(4);
+        assertEquals(9, cleric.getCurrentHealth());
+    }
+
+    //    @Test
+//    public void clericCanHeal() {
+//        cleric.takeDamage(5);
+//        cleric.heal(cleric);
+//        assertEquals(9, cleric.getCurrentHealth());
+//    }
 }

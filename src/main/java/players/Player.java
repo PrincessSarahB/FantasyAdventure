@@ -29,11 +29,18 @@ public abstract class Player {
         return currentHealth;
     }
 
-    public int getTreasureCount(){
+    public int getTreasureCount() {
         return this.treasure.size();
     }
 
-    public void takeDamage(int damage){
+    public void takeDamage(int damage) {
         this.currentHealth -= damage;
     }
+
+    public void beHealed(int healValue){
+        this.currentHealth += healValue;
+    }
+
 }
+
+

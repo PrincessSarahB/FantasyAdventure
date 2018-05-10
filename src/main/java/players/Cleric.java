@@ -18,4 +18,8 @@ public class Cleric extends Player {
     public void setHealingTool(HealingTool healingTool) {
         this.healingTool = healingTool;
     }
+
+//    public void heal(Player player){
+//        player.
+//    }
 }
