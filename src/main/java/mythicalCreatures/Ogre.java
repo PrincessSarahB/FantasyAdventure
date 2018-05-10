@@ -2,8 +2,9 @@ package mythicalCreatures;
 
 public class Ogre extends MythicalCreature {
 
+
     public Ogre(String name) {
-        super(name);
+        super(name, 12);
     }
 
     public String defend() {

@@ -10,4 +10,6 @@ public class Warlock extends Magician {
         super(name, maxHealth, spell, mythicalCreature);
     }
 
+
+
 }

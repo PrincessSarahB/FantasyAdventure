@@ -1,3 +1,4 @@
+import enemies.Orc;
 import mythicalCreatures.Dragon;
 import mythicalCreatures.Ogre;
 import org.junit.Before;
@@ -27,5 +28,12 @@ public class MythicalCreatureTest {
     public void canDefend() {
         assertEquals("Shrek blocks attack!", ogre.defend());
         assertEquals("Norbert guards with huge wings!", dragon.defend());
+    }
+
+    @Test
+    public void canAttack() {
+        Orc enemy = new Orc("Grog", 5);
+        dragon.attack(enemy);
+        assertEquals(5, enemy.getHealth());
     }
 }
