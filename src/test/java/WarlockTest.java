@@ -1,3 +1,5 @@
+import enemies.Enemy;
+import enemies.Orc;
 import mythicalCreatures.Dragon;
 import mythicalCreatures.MythicalCreature;
 import mythicalCreatures.Ogre;
@@ -15,12 +17,14 @@ public class WarlockTest {
     Warlock warlock;
     Spell spell;
     MythicalCreature mythicalCreature;
+    Enemy enemy;
 
     @Before
     public void before() throws Exception {
         spell = new LightningStrike(5);
         mythicalCreature = new Dragon("Smaug");
         warlock = new Warlock("Saruman", 40, spell, mythicalCreature);
+        enemy = new Orc("Grog", 5);
     }
 
     @Test
@@ -52,8 +56,9 @@ public class WarlockTest {
         assertEquals("Smaug guards with huge wings!", warlock.defended());
     }
 
-//    @Test
-//    public void canCastSpell() {
-//        assertEquals();
-//    }
+    @Test
+    public void canCastSpell() {
+        warlock.castSpell(enemy);
+        assertEquals(15, enemy.getHealth());
+    }
 }

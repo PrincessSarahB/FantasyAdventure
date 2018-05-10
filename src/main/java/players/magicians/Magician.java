@@ -1,5 +1,6 @@
 package players.magicians;
 
+import interfaces.Damageable;
 import mythicalCreatures.MythicalCreature;
 import players.Player;
 import spells.Spell;
@@ -34,5 +35,13 @@ public abstract class Magician extends Player {
 
     public String defended(){
        return this.mythicalCreature.defend();
+    }
+
+    public int getSpellDamage(){
+        return this.spell.getDamage();
+    }
+
+    public void castSpell(Damageable enemy){
+        enemy.takeDamage(getSpellDamage());
     }
 }
