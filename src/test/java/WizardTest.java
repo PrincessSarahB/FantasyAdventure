@@ -1,3 +1,5 @@
+import mythicalCreatures.Dragon;
+import mythicalCreatures.MythicalCreature;
 import org.junit.Before;
 import org.junit.Test;
 import players.magicians.Wizard;
@@ -10,12 +12,14 @@ import static org.junit.Assert.assertEquals;
 public class WizardTest {
 
     Wizard wizard;
+    MythicalCreature mythicalCreature;
     Spell spell;
 
     @Before
     public void before() throws Exception {
         spell = new LightningStrike(5);
-        wizard = new Wizard("Gandalf", 30, spell);
+        mythicalCreature = new Dragon("Draco");
+        wizard = new Wizard("Gandalf", 30, spell, mythicalCreature );
     }
 
     @Test
