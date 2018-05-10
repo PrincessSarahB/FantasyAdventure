@@ -42,6 +42,6 @@ public class DwarfTest {
         Treasure treasure2 = new Treasure(TreasureType.EMERALD);
         dwarf.pickUpTreasure(treasure);
         dwarf.pickUpTreasure(treasure2);
-        assertEquals(10, dwarf.getTotalTreasureValue());
+        assertEquals(20, dwarf.getTotalTreasureValue());
     }
 }

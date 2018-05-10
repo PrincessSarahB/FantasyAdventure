@@ -35,6 +35,11 @@ public abstract class Player implements Damageable, Healable {
         this.currentHealth = currentHealth;
     }
 
+    public ArrayList<Treasure> getTreasure() {
+        ArrayList<Treasure> copy = new ArrayList<>(treasure);
+        return copy;
+    }
+
     public int getTreasureCount() {
         return this.treasure.size();
     }
