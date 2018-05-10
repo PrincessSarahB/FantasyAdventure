@@ -1,3 +1,5 @@
+import enemies.Enemy;
+import enemies.Orc;
 import mythicalCreatures.Dragon;
 import mythicalCreatures.MythicalCreature;
 import org.junit.Before;
@@ -32,5 +34,12 @@ public class WizardTest {
         Spell differentSpell = new FireBall(6);
         wizard.setSpell(differentSpell);
         assertEquals(differentSpell, wizard.getSpell());
+    }
+
+    @Test
+    public void canCastSpell() {
+        Orc enemy = new Orc("Grog", 5);
+        wizard.castSpell(enemy);
+        assertEquals(5, enemy.getHealth());
     }
 }
